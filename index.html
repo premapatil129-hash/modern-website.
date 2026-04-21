@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusModern | Creative Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">NEXUS<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-extras">
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-up">Design Your <span class="gradient-text">Future</span></h1>
+            <p class="animate-up delay-1">Experience the next generation of web aesthetics with our responsive and interactive framework.</p>
+            <div class="hero-btns animate-up delay-2">
+                <a href="#contact" class="btn primary">Get Started</a>
+                <a href="#about" class="btn secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade">
+            <div class="glass-card">
+                <i class="fas fa-code-branch"></i>
+                <p>Clean Code</p>
+            </div>
+            <div class="floating-circle"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Mission</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized for speed and SEO to ensure your message reaches everyone.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Modern Stack</h3>
+                    <p>Built using HTML5, CSS3 transitions, and vanilla JavaScript ES6+.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="form-container">
+            <h2>Connect With Us</h2>
+            <form id="feedbackForm">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" required placeholder=" "></textarea>
+                    <label>Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="form-feedback" class="hidden"></div>
+        </div>
+
+        <!-- Dynamic Data Display -->
+        <div class="display-container">
+            <h3>Recent Submissions</h3>
+            <div id="submission-list">
+                <!-- JavaScript will inject data here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 NexusModern. Designed with <i class="fas fa-heart" style="color: #ff4d4d;"></i> for the web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
